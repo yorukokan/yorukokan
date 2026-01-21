@@ -7,8 +7,8 @@ A passionate computer engineering student focused on building mobile and web app
 ---
 
 ### 📬 Let's Connect:
-* **Email:** [okanyoruk.tr@gmail.com]
-* **LinkedIn:** [linkedin.com/in/okanyoruk]
+* **Email:** [okanyoruk.tr@gmail.com](mailto:okanyoruk.tr@gmail.com)
+* **LinkedIn:** [linkedin.com/in/okanyoruk](https://linkedin.com/in/okanyoruk)
 
 ### 💻 Tech Stack
 
