@@ -23,19 +23,3 @@ A passionate computer engineering student focused on building mobile and web app
 ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white) ![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white)
 
 ---
-
-### 📊 GitHub Stats
-
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api?username=yorukokan&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="Okan's Stats" height="170px" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yorukokan&theme=dark&hide_border=false&layout=compact" alt="Top Langs" height="170px" />
-</p>
-
-<p align="left">
-<img src="https://nirzak-streak-stats.vercel.app/?user=yorukokan&theme=dark&hide_border=false" alt="GitHub Streak" />
-</p>
-
----
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=yorukokan&icon=0&color=0" alt="Visit Count" />
-</p>
