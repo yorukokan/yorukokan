@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-size: 13.2px;
+    }
+    .mono-sm {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-size: 12px;
+    }
+    .cursor {
+      animation: blink 1.1s step-end infinite;
+    }
+    .status-pulse {
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+  </style>
+
+  <!-- Outer Window -->
+  <rect x="2" y="2" width="1196" height="366" rx="14" fill="url(#termBg)" stroke="url(#termBorder)" stroke-width="1.5"/>
+
+  <!-- Top Title Bar -->
+  <path d="M 2 16 Q 2 2 16 2 L 1184 2 Q 1198 2 1198 16 L 1198 44 L 2 44 Z" fill="url(#headerBg)"/>
+  <line x1="2" y1="44" x2="1198" y2="44" stroke="#334155" stroke-width="1"/>
+
+  <!-- macOS Traffic Lights -->
+  <circle cx="26" cy="23" r="6.5" fill="#EF4444"/>
+  <circle cx="48" cy="23" r="6.5" fill="#F59E0B"/>
+  <circle cx="70" cy="23" r="6.5" fill="#10B981"/>
+
+  <!-- Window Title -->
+  <text x="600" y="28" text-anchor="middle" class="mono-sm" fill="#94A3B8" font-weight="600">
+    okan@turksat-sys-core: ~/profile-telemetry — zsh (120×36)
+  </text>
+
+  <!-- Right Badge in Header -->
+  <rect x="1040" y="12" width="138" height="22" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <circle cx="1054" cy="23" r="4" fill="#34D399" class="status-pulse"/>
+  <text x="1066" y="27" class="mono-sm" fill="#E2E8F0" font-size="11">BILINGUAL EN/TR</text>
+
+  <!-- Vertical Divider for Dual Pane -->
+  <line x1="595" y1="44" x2="595" y2="328" stroke="#1E293B" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- ================= LEFT PANE: IDENTITY & EDUCATION ================= -->
+  <text x="28" y="74" class="mono" fill="#34D399" font-weight="700">okan@core</text>
+  <text x="102" y="74" class="mono" fill="#64748B">:</text>
+  <text x="112" y="74" class="mono" fill="#38BDF8" font-weight="700">~/identity</text>
+  <text x="195" y="74" class="mono" fill="#E2E8F0">$ cat whoami.yaml</text>
+
+  <text x="28" y="104" class="mono" fill="#F472B6">engineer</text><text x="94" y="104" class="mono" fill="#94A3B8">:</text>
+  <text x="44" y="128" class="mono" fill="#38BDF8">name</text><text x="80" y="128" class="mono" fill="#94A3B8">: </text><text x="96" y="128" class="mono" fill="#F8FAFC" font-weight="600">"Okan Yörük"</text>
+  <text x="44" y="152" class="mono" fill="#38BDF8">title_en</text><text x="110" y="152" class="mono" fill="#94A3B8">: </text><text x="124" y="152" class="mono" fill="#E2E8F0">"Software &amp; Systems Engineer"</text>
+  <text x="44" y="176" class="mono" fill="#38BDF8">title_tr</text><text x="110" y="176" class="mono" fill="#94A3B8">: </text><text x="124" y="176" class="mono" fill="#CBD5E1">"Yazılım &amp; Sistem/Ağ Mühendisi"</text>
+
+  <text x="28" y="206" class="mono" fill="#F472B6">education_and_role</text><text x="175" y="206" class="mono" fill="#94A3B8">:</text>
+  <text x="44" y="230" class="mono" fill="#38BDF8">university</text><text x="126" y="230" class="mono" fill="#94A3B8">: </text><text x="140" y="230" class="mono" fill="#E2E8F0">"Necmettin Erbakan Univ. (B.Sc. CompEng)"</text>
+  <text x="44" y="254" class="mono" fill="#38BDF8">gpa_score</text><text x="118" y="254" class="mono" fill="#94A3B8">: </text><text x="134" y="254" class="mono" fill="#34D399" font-weight="700">3.18 / 4.00</text><text x="232" y="254" class="mono" fill="#64748B"># Honor Student</text>
+  <text x="44" y="278" class="mono" fill="#38BDF8">enterprise</text><text x="126" y="278" class="mono" fill="#94A3B8">: </text><text x="140" y="278" class="mono" fill="#FBBF24" font-weight="600">"Türksat A.Ş. (Systems &amp; Network Mgmt)"</text>
+  <text x="44" y="302" class="mono" fill="#38BDF8">location</text><text x="110" y="302" class="mono" fill="#94A3B8">: </text><text x="126" y="302" class="mono" fill="#CBD5E1">"Ankara &amp; Konya, Türkiye"</text>
+
+  <!-- ================= RIGHT PANE: ARCHITECTURE & DOMAINS ================= -->
+  <text x="618" y="74" class="mono" fill="#34D399" font-weight="700">okan@core</text>
+  <text x="692" y="74" class="mono" fill="#64748B">:</text>
+  <text x="702" y="74" class="mono" fill="#38BDF8" font-weight="700">~/systems</text>
+  <text x="778" y="74" class="mono" fill="#E2E8F0">$ systemctl status capabilities</text>
+
+  <text x="618" y="104" class="mono" fill="#34D399" font-weight="700">●</text>
+  <text x="636" y="104" class="mono" fill="#F8FAFC" font-weight="700">capabilities.service</text>
+  <text x="802" y="104" class="mono" fill="#94A3B8">— Enterprise &amp; Full-Stack Core</text>
+
+  <text x="636" y="130" class="mono" fill="#A5B4FC" font-weight="600">[01] Enterprise Systems &amp; Network (Sistem ve Ağ)</text>
+  <text x="652" y="150" class="mono-sm" fill="#94A3B8">├─ Active Directory (AD DS), DNS, DHCP, GPO, RBAC &amp; PoLP</text>
+  <text x="652" y="168" class="mono-sm" fill="#94A3B8">└─ Windows Server, Linux Admin, Wireshark, TCP/UDP Sockets</text>
+
+  <text x="636" y="198" class="mono" fill="#38BDF8" font-weight="600">[02] Full-Stack Web &amp; Cross-Platform Mobile</text>
+  <text x="652" y="218" class="mono-sm" fill="#94A3B8">├─ Next.js 16, React 19, TypeScript, FastAPI, Node.js, PHP 8</text>
+  <text x="652" y="236" class="mono-sm" fill="#94A3B8">└─ Flutter &amp; Dart, Supabase (PostgreSQL/RLS), Firebase, SQLite</text>
+
+  <text x="636" y="266" class="mono" fill="#34D399" font-weight="600">[03] AI Vision, Desktop C++/Qt &amp; 3D WebGL Graphics</text>
+  <text x="652" y="286" class="mono-sm" fill="#94A3B8">├─ PyTorch CNN (FER-2013), OpenCV, Real-Time Emotion Analysis</text>
+  <text x="652" y="304" class="mono-sm" fill="#94A3B8">└─ Qt Widgets/C++ OOP &amp; Zero-Dep 22K Particle WebGL Engine</text>
+
+  <!-- Bottom Status Bar -->
+  <line x1="2" y1="328" x2="1198" y2="328" stroke="#1E293B" stroke-width="1"/>
+  <rect x="16" y="336" width="84" height="22" rx="4" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="0.8"/>
+  <text x="58" y="351" text-anchor="middle" class="mono-sm" fill="#34D399" font-weight="700">READY</text>
+
+  <text x="116" y="351" class="mono-sm" fill="#94A3B8">
+    okan@turksat-sys-core:~$ <tspan fill="#38BDF8">open https://yorukokan.github.io/portfolyo/</tspan>
+  </text>
+  <rect x="462" y="339" width="8" height="15" fill="#38BDF8" class="cursor"/>
+
+  <text x="1178" y="351" text-anchor="end" class="mono-sm" fill="#64748B">
+    UTF-8 · LF · WebGL 1.0 / Systems Architecture
+  </text>
+</svg>
